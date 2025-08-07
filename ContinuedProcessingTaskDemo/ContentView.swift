@@ -53,6 +53,7 @@ struct ContentView: View {
         }
     }
     
+    /// Runs the background continued processing task.
     private func runTask() {
         let request = BGContinuedProcessingTaskRequest(
             identifier: taskId,
