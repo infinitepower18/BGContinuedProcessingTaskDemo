@@ -50,6 +50,7 @@ struct ContentView: View {
                 task.progress.completedUnitCount += 1
                 task.updateTitle(title, subtitle: "\(task.progress.completedUnitCount)% complete")
             }
+            task.setTaskCompleted(success: true)
         }
     }
     
